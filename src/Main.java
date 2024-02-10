@@ -9,6 +9,8 @@ public class Main {
 
         list.displayList();
         
-        /* call the method */
+        list.deleteNode(10);
+
+        list.displayList();
     }
 }

@@ -30,6 +30,32 @@ public class DoublyLinkedList {
         }
     }
 
-    /* your code here */
+    public void deleteNode(int element){
+        if(head == null){
+             return;
+        }
+        Node current = head;
+        while(current != null){
+            if (current.data == element){
+                if(current.previous == null){
+                    head = current.next;
+                }else{
+                    current.previous.next = current.next;
+                }
+                    if(current.next != null){
+                        current.next.previous = current.previous;
+                    }
+                    return;}
+                    
+                   
+                    
+                 
+                current = current.next;
 
-}
+        
+            }
+        }
+
+    }
+
+
